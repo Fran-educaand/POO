@@ -1,8 +1,8 @@
 if __name__ == "__main__":
-    from LibroDigital import LibroDigital
-    from VideoCurso import VideoCurso
-    from Podcast import Podcast
-    from BibliotecaDigital import BibliotecaDigital
+    from models.LibroDigital import LibroDigital
+    from models.VideoCurso import VideoCurso
+    from models.Podcast import Podcast
+    from models.BibliotecaDigital import BibliotecaDigital
 
     biblioteca = BibliotecaDigital()
 

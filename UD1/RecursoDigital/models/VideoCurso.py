@@ -1,5 +1,6 @@
-from RecursoDigital import RecursoDigital
-class VideoCurso (RecursoDigital):
+from .RecursoDigital import RecursoDigital
+
+class VideoCurso(RecursoDigital):
     def __init__(self, titulo, autor, anio, duracion_minutos, nivel):
         super().__init__(titulo, autor, anio)
         self.duracion_minutos = duracion_minutos
@@ -7,10 +8,10 @@ class VideoCurso (RecursoDigital):
 
     def abrir(self):
         print(f"Abriendo video curso {self.getTitulo()}")
-    
+
     def tipo(self):
-        return f"Video"
+        return "Video"
+
     def descripcion(self):
         return f"Duración: {self.duracion_minutos} minutos, Nivel: {self.nivel}"
-    
-    
+
